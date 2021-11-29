@@ -1,0 +1,1 @@
+CheckJpeg.exe I:\code-of-flowing-stream\pysot\testing_dataset\GOT-10k 0

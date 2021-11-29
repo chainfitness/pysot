@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="2c343fe1-3655-4796-97c3-bc9cfe34b564" name="pysot-remote">
+        <fileTransfer rootFolder="/home/rzh/win-pycharm/liuChang/pysot/pysot" accessType="SFTP" host="192.168.0.213" port="22" sshConfigId="c267337d-f779-4bb4-bdaf-4337f429daf9" sshConfig="flow-stream-server213" />
+      </webServer>
+    </option>
+  </component>
+</project>
