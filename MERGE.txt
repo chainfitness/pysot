@@ -1,2 +1,2 @@
 pure conflict
-
+this is a file to test merage instruction
