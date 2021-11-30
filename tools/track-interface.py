@@ -144,7 +144,7 @@ class Tracker:
 
     def get_frames(self, video_name):
         if not video_name:
-            cap = cv2.VideoCapture(0)
+            cap = cv2.VideoCapture("rtsp://192.168.0.218/main")
             # warmup
             for i in range(5):
                 cap.read()
@@ -188,9 +188,6 @@ if __name__ == '__main__':
     parser.add_argument('--sfps', default=15.0, type=float,
                         help='fps of saved video')
     args = parser.parse_args()
-    # 想要初始化第一帧的bdox坐标（X1,Y1,X2,Y2）
     bdbox = '316,792,404,123'
-    # 传入bdbox坐标实例化Tracker类并调用预测并可视化接口，若不传入bdbox进行实例化，则需手动按s选择后按空格开始跟踪。
     pred_bdbox_list = Tracker(args.video_name).pred_n_visualization()
-    print(pred_bdbox_list)
-    # Tracker(args.video_name, bdbox).just_get_pred_bdbox()
+    # print(pred_bdbox_list)
